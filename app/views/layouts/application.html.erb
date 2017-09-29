@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AnjoDoce</title>
+  <%= csrf_meta_tags %>
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+  
+  <%= stylesheet_link_tag    'default', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'default', 'data-turbolinks-track': 'reload' %>
+</head>
+
+<body>
+
+  <!--Import jQuery before materialize.js-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+
+  <%= render '/layouts/nav-bar' %>
+
+
+
+  <%= yield %>
+
+
+  <%= render '/layouts/footer' %>
+
+
+</body>
+</html>
